@@ -52,7 +52,7 @@ public class TestSubtraction {
         byte difference = 64;
         byte expectedByte = -1;
         // : When
-        byte actualByte = mathUtils.subtract(baseValue, difference);
+        byte actualByte = (byte) mathUtils.subtract(baseValue, difference);
         // : Then
         assertEquals(expectedByte,actualByte);
     }
